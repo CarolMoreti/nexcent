@@ -1,0 +1,35 @@
+.clients-div{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin-top:40px;
+}
+.clients-div h1{
+    font-size:50px;
+    color:var(--secundary-dark);
+    text-align:center;
+    margin-top:40px;
+}
+.clients-div p{
+    font-size:24px;
+    color:var(--secundary-light);
+    text-align:center;
+}
+.client{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    gap:100px;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+.clients{
+    width:100px;
+}
+.card-client{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
