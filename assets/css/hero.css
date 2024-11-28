@@ -1,0 +1,67 @@
+.slide-container{
+    width: 100vw;
+    height: 600px; /*em um projeto de site padrão altura ajusta conforme o tamanho do banner do site*/
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+.image-container{
+    width: 300vw;/*quantidade varia de acordo com a quantidade de imagem. 300vw = 3 img, 4 img = 400vw; ou seja a cada imagem acrescenta 100vw*/
+    height: 100vh;
+    display: flex;
+    animation: slideAnimation 15s infinite ease-in-out; /*o tempo equivale a todo o carrosel*/
+    animation-play-state: running; /*estado inicial da animação quando o site inicia*/
+}
+/*imagens precisam ter o mesmo tamanho para não ter erro*/
+.slider-image{
+    width: 100vw;
+    height: 600px;
+    object-fit: cover;
+}
+.button-container{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);/*o translate -50 ajusta o 50% do left que empurra o inicio da div da bolinha no meio*/
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.slider-button{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--secundary-light);
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+.slider-button:hover{
+    background-color:var(--primary);
+}
+.slider-button:hover ~ .image-container{
+    animation-play-state: paused;
+}
+.image-container:hover{
+    animation-play-state: running;
+}
+#slider-image1:target ~ .image-container{
+    animation: none;
+    transform: translateX(0);
+}
+#slider-image2:target ~ .image-container{
+    animation: none;
+    transform: translateX(-100vw);
+}
+#slider-image3:target ~ .image-container{
+    animation: none;
+    transform: translateX(-200vw);
+}
+
+/*Animação*/
+@keyframes slideAnimation{
+    0%{transform: translateX(0);}
+    33.33%{transform: translateX(-100vw);}
+    66.66%{transform: translateX(-200vw);}
+    100%{transform: translateX(0);}
+}

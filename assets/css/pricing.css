@@ -1,0 +1,49 @@
+.pricing .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pricing h1{
+    font-size: 30px;
+}
+.pricing p{
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 150px;
+    margin: 40px 0;
+}
+.div-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-card p{
+    margin: 12px 0;
+    font-size: 20px;
+    width:300px;
+}
+.image-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--neutral);
+    box-shadow: 0 16px 30px #ABBED1;
+    margin-top:-10%;
+    padding: 20px;
+}
+.image-card h4{
+    align-self: center;
+}
+.image{
+    width:400px;
+}
+

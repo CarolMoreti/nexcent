@@ -6,13 +6,13 @@
     margin-top:40px;
 }
 .clients-div h1{
-    font-size:50px;
+    font-size:30px;
     color:var(--secundary-dark);
     text-align:center;
-    margin-top:40px;
+    margin-top:80px;
 }
 .clients-div p{
-    font-size:24px;
+    font-size:14px;
     color:var(--secundary-light);
     text-align:center;
 }
@@ -21,15 +21,21 @@
     flex-direction:row;
     justify-content:space-between;
     gap:100px;
-    margin-top:60px;
+    margin-top:100px;
     margin-bottom:60px;
 }
 .clients{
-    width:100px;
+    width:70px;
+    margin-top:20px;
 }
 .card-client{
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content: center;
+    box-shadow: 0 16px 30px #ABBED1;
+    border-radius: 20px;
+}
+.card-client p{
+    font-size: 24px;
 }
